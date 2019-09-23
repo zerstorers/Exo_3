@@ -21,20 +21,39 @@
 // }
 
 
-var listArea = document.getElementById("text_area");
-var btn = document.getElementById("btn");
-var result = document.getElementById("resultat");
-i = 0
-var smiley = [":-)", ":-(", ":D", ":)"];
+// var listArea = document.getElementById("text_area");
+// var btn = document.getElementById("btn");
+// var result = document.getElementById("resultat");
+// i = 0
+// var smiley = [":-)", ":-(", ":D", ":)"];
 
-btn.addEventListener("click", function () {
-    var text = listArea.value;
-    for (let i = 0; i < smiley.length; i++) {
+// btn.addEventListener("click", function () {
+//     var text = listArea.value;
+//     for (let i = 0; i < smiley.length; i++) {
          
-            text = text.replace(smiley[i], "---");
+//             text = text.replace(smiley[i], "---");
 
+//     }
+
+
+//     result.innerHTML = text;
+// })
+
+var listArea = document.getElementById("text");
+var result = document.getElementById("resultat");
+
+var btn = document.getElementById("btn");
+
+var smileys = [":-)", ";-)", ":-D"];
+
+btn.addEventListener("click", function(){
+    var text = listArea.value;
+
+    for (let i = 0; i < smileys.length; i++) {
+        while(text.includes(smileys[i])){
+            text = text.replace(smileys[i], "---")
+        }
     }
-
 
     result.innerHTML = text;
 })
