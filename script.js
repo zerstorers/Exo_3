@@ -21,17 +21,15 @@
 // }
 
 
-var smiley = [":-) :) :D"];
 var listArea = document.getElementById("text_area");
 var btn = document.getElementById("btn");
-var strReplace = "__";
+var result = document.getElementById("resultat");
 
 
 btn.addEventListener("click", function(){
-    listArea.
-
+    var text = listArea.Value;    
     
-    
+    result.innerHTML = text;
 })
 
 
