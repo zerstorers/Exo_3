@@ -21,18 +21,17 @@
 // }
 
 
-var smiley = (":-) :) :D");
+var smiley = [":-) :) :D"];
 var listArea = document.getElementById("text_area");
 var btn = document.getElementById("btn");
-var strReplace = ("__")
+var strReplace = "__";
+
 
 btn.addEventListener("click", function(){
-    while(i < "listArea".lenght) {
-        if smiley == listArea(i) {
-            strReplace.replace()
-        }
-    }
-    i++
+    listArea.
+
+    
+    
 })
 
 
